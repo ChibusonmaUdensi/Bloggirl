@@ -9,9 +9,16 @@ export default function Home({ posts: initialPosts }) {
 
   // Filter posts based on search term using useMemo for performance optimization
   const filteredPosts = useMemo(() => {
-    return initialPosts.filter((post) =>
-      post.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    return initialPosts.filter((post) => {
+      // Convert search term to lowercase for case-insensitive comparison
+      const lowerCaseSearchTerm = searchTerm.toLowerCase();
+
+      // Check if the search term exists in the title or body
+      return (
+        post.title.toLowerCase().includes(lowerCaseSearchTerm) ||
+        post.body.toLowerCase().includes(lowerCaseSearchTerm)
+      );
+    });
   }, [searchTerm, initialPosts]);
 
   return (
