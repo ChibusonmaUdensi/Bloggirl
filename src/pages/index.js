@@ -24,7 +24,7 @@ export default function Home({ posts: initialPosts }) {
   return (
     <div className="container mx-auto p-4">
       {/* Page Title */}
-      <h1 className="text-3xl font-bold text-center my-6">You found Bloggirl🤭</h1>
+      <h1 className="text-3xl font-bold text-black text-center my-6">You found Bloggirl🤭</h1>
 
       {/* Search Bar */}
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
