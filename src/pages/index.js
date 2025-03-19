@@ -13,11 +13,8 @@ export default function Home({ posts: initialPosts }) {
       // Convert search term to lowercase for case-insensitive comparison
       const lowerCaseSearchTerm = searchTerm.toLowerCase();
 
-      // Check if the search term exists in the title or body
-      return (
-        post.title.toLowerCase().includes(lowerCaseSearchTerm) ||
-        post.body.toLowerCase().includes(lowerCaseSearchTerm)
-      );
+      // Check if the search term exists in the title only
+      return post.title.toLowerCase().includes(lowerCaseSearchTerm);
     });
   }, [searchTerm, initialPosts]);
 
