@@ -15,8 +15,8 @@ A simple Next.js application that fetches and displays blog posts from JSONPlace
 ### Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/blog-posts-viewer.git
-cd blog-posts-viewer
+git clone https://github.com/ChibusonmaUdensi/Bloggirl.git
+cd bloggirl
 ```
 
 2. Install dependencies:
