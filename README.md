@@ -4,7 +4,7 @@ A simple Next.js application that fetches and displays blog posts from JSONPlace
 
 ## Features
 * **Home Page**: Displays a collection of blog posts with titles and content loaded during server rendering
-* **Search Functionality**: Filter blog posts by title
+* **Search Functionality**: Filter blog posts by user input
 * **External API Integration**: Fetches data from JSONPlaceholder
 
 ## Getting Started
